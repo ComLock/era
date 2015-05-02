@@ -1,0 +1,11 @@
+doctype html
+html
+  head
+    title Era
+    = stylesheet_link_tag    'application', 'data-turbolinks-track' => true, media: 'all'
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = csrf_meta_tags
+    / Inform the browser that the site optimized for mobile
+    meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes"
+body
+  = yield
